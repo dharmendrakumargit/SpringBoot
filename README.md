@@ -10,7 +10,7 @@ Hibernate And Jpa With Spring Boot
 										     Spring Boot Introduction
 											 
 										  Spring Boot Goal
-										  ----------------------
+										  ----------------
 										  1)Spring boot frameWork  becomes Quickest way to Develop Micro Services in java world
 										  2)Spring Boot enables to develop production ready Code.
 										  -------------
