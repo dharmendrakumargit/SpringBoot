@@ -43,5 +43,45 @@ SpringBoot examples
                 **      Spring Initializer
                                             **   start.spring.io		
 
-                                             web starter to develope Rest services											
+                                             web starter to develope Rest services
+
+** What is Auto Configuration in SpringBoot - How it Works.
+
+@SpringBootApplication
+1) It is Spring Context  --> This indicates that this is context File - This file where we declare it(Main method File)	
+2) It Enables AutoConfiguration			
+3) It Enables ComponentScan	
+4) SpringApplication.run() method -- Used to run Spring Context			
+
+      run() method return ApplicationContext.	
+-------------------------------------------------------------------------------------------------------------
+We are printing the name of bean which is configured using Application Context
+@SpringBootApplication
+public class SpringBootWithRestControllerExampleApplication {
+
+	public static void main(String[] args) {
+	ApplicationContext appContext=	SpringApplication.run(SpringBootWithRestControllerExampleApplication.class, args);
+	for(String nameOfBean: appContext.getBeanDefinitionNames() ) {
+		System.out.println(nameOfBean);
+		
+	}
+	}
+
+}
+** How Autoconfiguration(Spring AutoConfiguration  jar) Works-
+----------------------------------------------------------------------------------------------------------
+A lot of class being printed because of Autoconfiguration in above code.
+How Auto configuration works-- Suppose you need web MVC starter so you added Web MVC Starter.
+When Spring boot application start looks in Classpath(Maven Dependencies) it found Spring MVC Starter hence--Spring Autoconfiguration jar
+will configure require thing for Web MVC starter --eg Dispatcher Serverlet,Vew resolver
+Similar way for many(DataSource Autoconfiguration)
+-----------------------------------------------------------------------------------------------------------	
+Application.properties
+logging.level.org.springframework=DEBUG  
+
+By Enabling Debug you can see in console what are all things are AutoConfigured and what are all are not Auto Configured.
+
+-------------------------------------------------------------------------------------------------------------
+
+											 
 											   
