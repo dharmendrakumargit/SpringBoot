@@ -1,10 +1,6 @@
 # SpringBoot
 SpringBoot examples
-
-# Hibernate-And-Jpa-With-Spring-Boot
-Hibernate And Jpa With Spring Boot
-
----------------------------------------   ---------------
+--------------------
                                           Notes  Hibernate
 										  ----------------
 										     Spring Boot Introduction
