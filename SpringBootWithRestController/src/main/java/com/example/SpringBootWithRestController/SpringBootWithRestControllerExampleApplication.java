@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /* Author Dharmendra Kumar 
-07  Mar 2021
+   07  Mar 2021
 
-WAP for Spring Boot Application which is having simple rest controller
+   WAP for Spring Boot Application which is having simple rest controller
 */
 
 @SpringBootApplication
