@@ -82,6 +82,65 @@ logging.level.org.springframework=DEBUG
 By Enabling Debug you can see in console what are all things are AutoConfigured and what are all are not Auto Configured.
 
 -------------------------------------------------------------------------------------------------------------
+** SpringBoot VS Spring VS Spring MVC ---
+** Spring FrameWork
+What is the Core Problem Spring Framework Solves
+   1)  Most important feature of Spring framework is dependency injection.At the core of All the Spring Modules is Dependency Injection
+   OR IOC
+** WHY -->DI || IOC is important->When we use IOC and DI properly we can develop loosely coupled Application and 
+   loosely coupled Application can be easly unit tested
+   
+   2) Spring Frame Work Solve Duplicate Plunbing COde.
+   Example--Spring JDBC-- In Normal JDBC we are writing lot of repetative Code.(eg try,catch,Exception handling, lot of repetative code)
+   3) Spring Framework provide good Integration with other framework
+           Hibernate for ORM
+		   Junit & Mockito for Unit Testing
+		   iBatis for Object mapping
+		   
+** -- What is the core problem Spring MVC Framework solves
+       Spring MVC Framework provides decoupled way of developing Web Application
+       With simple concept like Dispatcher servlet,Model and view and view resolver
+       It makes it easy to develop web application.
+Whether you are developing web Application or rest services using spring boot internally you are using Spring MVC
+
+** -- Why do we need SpringBoot
+      Spring Base application of lot of configuration
+	  
+	  When we are using spring MVC we need to configure component scan,dispatcher servlet,view resolver
+	  web jar(for delivering ststic content) among other things
+	  
+	  <bean class = "org.springframework.web.servlet.view.InternalResourceViewResolver">
+          <property name = "prefix" value = "/WEB-INF/jsp/"/>
+          <property name = "suffix" value = ".jsp"/>
+      </bean>
+	  
+	  <mvc:resources mapping="/webjar/**" location="/webjar/" />
+	  
+	  -------------------
+	     <servlet>
+      <servlet-name>Dispatcher</servlet-name>
+      <servlet-class>
+         org.springframework.web.servlet.DispatcherServlet
+      </servlet-class>
+      <load-on-startup>1</load-on-startup>
+   </servlet>
+
+   <servlet-mapping>
+      <servlet-name>Dispatcher</servlet-name>
+      <url-pattern>*.jsp</url-pattern>
+   </servlet-mapping>
+   
+   ----------------------------------
+   
+   If We are using Hibernate
+   We need to Configure DataSource ,Entity Manager ,Transaction Manager in xml files.
+   
+   -----------------------------------------
+   V15
+   
+	   
+   
+
 
 											 
 											   
