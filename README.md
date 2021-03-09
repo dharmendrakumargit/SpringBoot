@@ -202,7 +202,7 @@ It works by returning data in JSON format which outlines relevant information ab
    
    Spring Tools Plugin-->Add to your Eclipse for Better Suggestion  typing over eclipse editor
    
--------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
   *** Spring Boot Developer tool
   This is one of the coolest feature -- Load the code at run time--No need to compile and restart the server
 <dependency>
