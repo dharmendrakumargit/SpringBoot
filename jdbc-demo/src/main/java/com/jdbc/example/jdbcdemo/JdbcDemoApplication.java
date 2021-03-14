@@ -11,6 +11,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
    please go through pom.xml  where we have added H2 Db Starter ,so H2 Db will also be Autoconfigured.
    web starter added for H2 DB Web Console(H2 DB Web client (ex - similar as tode/sql developer) )
   */
+// First Run the Application and copy paste mentioned below URL to the Browser
+// H2 DB Console URL --> http://localhost:8080/h2-console/
 
 @SpringBootApplication
 public class JdbcDemoApplication {
